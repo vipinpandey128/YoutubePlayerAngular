@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="jumbotron bg-light" *ngFor="let p of ytData"> 
+
+    <hr class="my-4">
+
+    <section class="card card-info text-white bg-dark mb-3">
+      <div class="card-header">{{p.youtubeUrl}}</div>
+      <section class="card-img-top">
+        <youtube-player
+          [videoId]="id"
+          (ready)="savePlayer($event)"
+          (change)="onStateChange($event)"
+          [playerVars]="playerVars">
+        </youtube-player>
+ 
+      </section>
+      <div class="card-body"></div>
+    </section>
+    <button *ngIf="ytEvent !== 1"
+      type="button"
+      class="btn btn-primary"
+      (click)="playVideo()">
+      Play
+    </button>
+    <button *ngIf="ytEvent === 1"
+      type="button"
+      class="btn btn-danger"
+      (click)="pauseVideo()">
+      Pause
+    </button>
+  </div>
+</div>
+
+<div class="col-12">
+  <section class="card card-success">
+    <div class="card-body">
+      <div class="card-title">Player State</div>
+      <pre>{{ ytEvent }}</pre>
+    </div>
+  </section>
+</div>

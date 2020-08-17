@@ -1,0 +1,613 @@
+<div id="parentDiv" scrollSpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)">
+
+<app-carousel></app-carousel>
+
+  <div id="section1" class="container mt-5">
+    <div class="welcome_section pt-7 pb-5">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="about-thumb">
+            <img src="../../assets/images/bvk.jpg" alt="" class="img-fluid">
+            <!-- <span class="about-thumb-small">
+              <img src="../../../assets/images/thumb-5.jpg" alt="" class="img-fluid">
+            </span> -->
+          </div>
+        </div>
+        <div class="col-md-7">
+          <h5 class="sub_title title-wrapper">About us</h5>
+          <h3 class="primary_color_text">We are Taking Small Steps to Make Earth Better Planet</h3>
+          <p>With a great passion to serve the Lord, and to preach the true gospel, God has put a burden in the heart of Dr.B.V.Kumar. So, he started Dr.B.V.Kumar Foundation. And church ministry - Gethsemane Prayer Hall. And Television Ministry - The Rays Of Cross Ministries. Millions of people are blessed by the word, and many people have been healed and witnessed the presence of the lord with with them. And the people who dedicated their life to Jesus and Accepted him as their personal saviour, are baptised in the name of the father, son and the Holy Spirit. Today, many people are surrendering themselves to christ and changing their lives to lead a holy and a peaceful life! </p>
+
+          
+        </div>
+
+        <!-- <div class="col-md mt-5">
+          <h5 class="sub_title title-wrapper">CHURCH MINISTRY :</h5>
+          <p>Having a goal in mind establishing the churches every nook and corner with 7000 churches and pastors in AP.
+            And performing in and all the church activities like.
+          </p>
+          <div class="col">
+            <ul>
+              <li>Cottage prayers meetings,</li>
+              <li>Baptisms</li>
+              <li>Bible studies</li>
+              <li>Fasting prayers</li>
+              <li>Healing prayers</li>
+
+              <li>Women conferences</li>
+              <li>House visiting and</li>
+              <li>Performing all ceremonies</li>
+            </ul>
+            <h5>John 4:23 and Hebrew 10:25, in order to assemble together, and worship the Lord in Spirit and truth</h5>
+
+            <a routerLink="/errorPage" class="btn custom_button text-center align-self-center">Read More</a>
+
+        
+          </div>
+        </div> -->
+
+
+       
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="">
+    <h5 class="sub_title title-wrapper text-center">Our Ministry</h5>
+    <div class="grid container">
+      <div class="card_grid">helo</div>
+      <div class="card_grid">helo</div>
+      <div class="card_grid">helo</div>
+      <div class="card_grid">helo</div>
+      <div class="card_grid">helo</div>
+      <div class="card_grid">helo</div>
+      <div class="card_grid">helo</div>
+     
+    </div>
+  </div> -->
+  <div>
+    <h5 class="sub_title title-wrapper text-center mb-3">Our Ministry</h5>
+    <section class="cards container">
+
+      <!--   card 1 -->
+        <article class="card">
+          <picture class="thumbnail">
+               <img class="category__01" src="../../assets/icons/CHURCH MIN.jpg" alt="" />
+          </picture>
+          <div class="card-content">
+            <p class="category category__01">CHURCH MININISTRY</p>
+            <p>Having a goal in mind establishing the churches every nook and corner with 7000 churches and pastors in AP.
+              And performing in and all the church activities like.
+            </p>
+  
+            <ul *ngIf="showMyContainer">
+              <li>Cottage prayers meetings,</li>
+              <li>Baptisms</li>
+              <li>Bible studies</li>
+              <li>Fasting prayers</li>
+              <li>Healing prayers</li>
+  
+              <li>Women conferences</li>
+              <li>House visiting and</li>
+              <li>Performing all ceremonies</li>
+            </ul>
+  
+         </div><!-- .card-content -->
+          <footer>
+            <div class="post-meta">
+              <a (click)="showMyContainer=!showMyContainer" class="btn custom_button_r text-center align-self-center">Read More</a>
+
+              </div>
+          </footer>
+        </article>
+      <!--   card 2 -->
+        <article class="card">
+          <picture class="thumbnail">
+               <img class="category__02" src="../../assets/icons/CHLDREN MIN.jpg" alt="" />
+          </picture>
+          <div class="card-content">
+            <p class="category category__02">CHILDREN MINISTRY</p>
+            <p>Equip the kids with the word of God according to the word of God in Proverbs  22:6“Train up a child in the way he should go, And when he is old <span *ngIf="showMyContainer" class="p-0">  he will not depart from it”. Teach and train the youth to live a worthy life for Christ, based on the word of God in Lamentations  3:27 “it is good for a man to bear the yoke while he is young”</span></p>
+         </div><!-- .card-content -->
+          <footer>
+            <div class="post-meta">
+              <a (click)="showMyContainer=!showMyContainer" class="btn custom_button_r text-center align-self-center">Read More</a>
+              </div>
+          </footer>
+        </article>
+      <!--   card 3 -->
+        <article class="card">
+          <picture class="thumbnail">
+               <img class="category__03" src="../../assets/icons/YOUTH.jpg" alt="" />
+          </picture>
+          <div class="card-content">
+            <p class="category category__03">YOUTH MINISTRY</p>
+            <p>Youth ministry is filled with spiritual development, teaching, counselling, leadership development, and most of the other challenges and blessings. 
+              <span *ngIf="showMyContainer" class="p-0">Youth Ministry seeks to show theyouth that they matter the most and help the youth within the age group of 15-30 to share their gifts, grow in life skills,develop a positive self-image, overcome prejudices, develop respect for differences, serve those in need, participate in the Church, and develop a personal relationship with Jesus and prayer life and to reach their full God created potential.</span> </p>
+         </div><!-- .card-content -->
+          <footer>
+            <div class="post-meta">
+              <a (click)="showMyContainer=!showMyContainer" class="btn custom_button_r text-center align-self-center">Read More</a>
+              </div>
+          </footer>
+        </article>
+      <!--   card 4 -->
+      <article class="card">
+        <picture class="thumbnail">
+             <img class="category__01" src="../../assets/icons/WOMEN MIN.jpg" alt="" />
+        </picture>
+        <div class="card-content">
+          <p class="category category__01">WOMEN’S MINISTRY</p>
+          <p >he purpose of the Women's Ministry is to inspire, support, encourage and challenge the women of the society.
+
+            To grow in intimate relationship with Jesus <span *ngIf="showMyContainer" class="p-0"> Christ through daily study  and application of the scriptures, prayer and spiritual life.
+            To explore scripturally sound opportunities for service in every calling of life from home, to church, to the world.
+            To equip women to fulfil their callings with opportunities to network and learn from others how they can serve God.
+            To develop fresh approaches to God-pleasing ministries for women. </span></p>
+       </div><!-- .card-content -->
+        <footer>
+          <div class="post-meta">
+            <a (click)="showMyContainer=!showMyContainer" class="btn custom_button_r text-center align-self-center">Read More</a>
+            </div>
+        </footer>
+      </article>
+        <article class="card">
+          <picture class="thumbnail">
+               <img class="category__04" src="../../assets/icons/CRUSADE.jpg" alt="" />
+          </picture>
+          <div class="card-content">
+            <p class="category category__04">CRUSADE MINISTRY</p>
+            <p>With a vision and mission “Love God and Love people,” Dr.B.V.Kumar Foundation  proclaim the Good News of Jesus Christ by every effective means to every nation, <span *ngIf="showMyContainer" class="p-0">  tribe and tongue to lead them into salvation and through salvation into eternal life.
+
+
+
+              Dr.B.V.Kumar Foundation  has been organising & conducting open air crusades from the past decades that includes Gospel Meetings, Revival Meetings, Healing Crusades, Deliverance Crusades, Youth Meetings, Women’s Conferences, Men’s Conferences etc at various remote interior villages, towns & cities throughout India and other nations.
+              
+              
+              
+              Multitudes have attended these meetings and have received the Lord as their personal saviour, lives changed & blessed, multitudes healed & delivered from sicknesses and bondages through the Life Changing messages and prayers by Dr.B.V.Kumar. </span></p>
+         </div><!-- .card-content -->
+          <footer>
+            <div class="post-meta">
+              <a (click)="showMyContainer=!showMyContainer" class="btn custom_button_r text-center align-self-center">Read More</a>
+              </div>
+          </footer>
+        </article>
+      <!--   card 5 -->
+        <article class="card">
+          <picture class="thumbnail">
+               <img class="category__02" src="../../assets/icons/TV MIN.jpg" alt="" />
+          </picture>
+          <div class="card-content">
+            <p class="category category__02">T.V. MINISTRY</p>
+            <p>Gospel is preached to millions  of people thru the TV programs and has been a great teacher & comforter which touch people’s lives and a useful tool in winning souls for His        kingdom. <span *ngIf="showMyContainer" class="p-0"> 
+
+              Some channels where our programs are regularly telecasted are Aradhana TV, SuvarthaTv, Hallelujah TV, ETC..across states of Telangana and Andhra region.
+              
+             </span> </p>
+         </div><!-- .card-content -->
+          <footer>
+            <div class="post-meta">
+              <a (click)="showMyContainer=!showMyContainer" class="btn custom_button_r text-center align-self-center">Read More</a>
+              </div>
+          </footer>
+        </article>
+        <!--   card 6 -->
+        <article class="card read-more-wrap">
+          <picture class="thumbnail">
+               <img class="category__01" src="../../assets/icons/VILLAGE MIN.jpg" alt="" />
+          </picture>
+          <div class="card-content">
+            <p class="category category__01">VILLAGE MINISTRY</p>
+            <p>We have been travelling yo villages in and around Andhra Pradesh. God has been leading us to preach the word to the people who dint have an opportunity <span *ngIf="showMyContainer" class="p-0">  to listen to the word through he digital media. </span> </p>
+         </div><!-- .card-content -->
+          <footer>
+            <div class="post-meta">
+              <label for="post-2" class="read-more-trigger"></label>
+              <a (click)="showMyContainer=!showMyContainer" class="btn custom_button_r text-center align-self-center">Read More</a>
+              </div>
+          </footer>
+        </article>
+  
+      </section>
+  </div>
+
+    
+
+
+
+  <div id="section2" class="mt-5" style=" background-image: url(https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/10/contact-bg-1.jpg);
+  background-attachment:fixed; border-bottom-left-radius: 100%;">
+    <div class="py-5" style=" background-color: rgba(0,22,47,.81);
+    opacity: 1;
+    transition: background .3s,border-radius .3s,opacity .3s;">
+    <div class="event_section">
+      <h5 class="sub_title title-wrapper text-center">Events</h5>
+      <!-- <h2 class="text-center text-light">Latest Events</h2>
+      <div class="d-flex justify-content-around">
+        <div class="card" style="width: 33rem;">
+          <img class="card-img-top" src="../../assets/images/SAM01812.JPG" alt="Card image cap">
+           <div class="card" style="width: 77px;     position: relative;
+    bottom: 3rem;
+    left: 2rem;">
+             <div class="card-body card_body">
+               <p class="card-text">13 June</p>
+             </div>
+             <div class="card-footer bg-danger">
+                <p class="card-text">8pm</p>
+             </div>
+           </div>
+          <div class="card-body">
+            <h2 class="card-title">wedding Anniversery</h2>
+            
+            <a routerLink="/eventDetails/" class="btn btn-danger">Event Details</a>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="special_pic">
+        <img src="../../assets/images/ANN.jpg" alt="" style="width: 100%;">
+      </div> -->
+
+      <div class="d-lg-flex d-md-block d-sm-block s-xs-block common_height">
+        <div class="col-lg-4 col-sm-12 curve_img p-0">
+          <!-- <img src="" class="d-block w-100 h-lg-75 h-sm-50" alt="..."> -->
+          <div class="col-md-12">
+            <div class="container right-container" *ngFor="let p of events$ | async">
+                <h5 class="d-lg-flex d-md-block d-sm-block s-xs-block justify-content-center list-items py-5">Announcement</h5>
+                <ul class="bg-light">
+                  <li class="list-items d-flex justify-content-around">
+                    <p>Mon-Wed</p>
+                    <p> {{p.mondayEvent}} </p>
+                  </li>
+                  <li class="list-items d-flex justify-content-around">
+                    <p>Thu-Fri</p>
+                    <p> {{p.sundayEvent}} </p>
+                  </li>
+                  <li class="list-items d-flex justify-content-around">
+                    <p>Sat</p>
+                    <p>8:00 - 8:40</p>
+                  </li>
+                  <li class="list-items d-flex justify-content-around">
+                    <p>Sun</p>
+                    <p>Holiday</p>
+                  </li>
+                </ul>
+      
+            </div>
+          </div>
+      
+        </div>
+        <div class="col-lg-8 col-sm-12 text-center text-light h-lg-100 h-sm-50" *ngFor="let p of specialevents$ | async">
+          <h5 class="up_comimg">UPCOMING EVENTS</h5>
+          <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <h3>Annual Open Day</h3>
+                  <p>Dec 5,2020</p>
+                  <button type="button" name="button" class="join_btn">JOIN NOW</button>
+              </div>
+              <div class="carousel-item">
+                <h3>Spring Picnic</h3>
+                <p>Dec 5,2020</p>
+                <button type="button" name="button" class="join_btn">JOIN NOW</button>
+              </div>
+              <div class="carousel-item">
+                <h3>Happy Father`s Day</h3>
+                <p>Dec 5,2020</p>
+                <button type="button" name="button" class="join_btn">JOIN NOW</button>
+              </div>
+            </div>
+          </div> -->
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container d-flex justify-content-center">
+                  <!-- <div class="col-4"> -->
+  
+                  <!-- </div> -->
+                  <div class="col-8" >
+                    <!-- <img class="event_thumb" src="../../assets/images/ANN.jpg" alt=""> -->
+                    <img class="event_thumb" src="{{p.eventImage}}" alt="">
+
+
+                    <h3> {{p.eventTitle}} </h3>
+                    <p> {{p.eventDate}} </p>
+                    <button type="button" name="button" class="join_btn">JOIN NOW</button>
+                  </div>
+                </div>
+                
+                 
+               
+              </div>
+              <div class="carousel-item">
+                <h3>Spring Picnic</h3>
+                <p>Dec 5,2020</p>
+                <button type="button" name="button" class="join_btn">JOIN NOW</button>
+              </div>
+              <div class="carousel-item">
+                <h3>Happy Father`s Day</h3>
+                <p>Dec 5,2020</p>
+                <button type="button" name="button" class="join_btn">JOIN NOW</button>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+  <!-- <div class="pt-5 event_section"> -->
+  <div id="section3" class="container">
+    <div class="welcome_section pt-5 pb-5">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="about-thumb">
+            <h5 class="sub_title text-center title-wrapper my-5">Live</h5>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/OI-uQ9O-SKo" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <div class="embed-responsive embed-responsive-16by9">
+             <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/137857207"
+               allowfullscreen></iframe>
+           </div> -->
+
+          </div>
+        </div>
+
+     <!-- <video [src]="safeSrc"></video> -->
+
+        <div class="col-md-5">
+          <h5 class="sub_title title-wrapper my-5">Videos</h5>
+          <h3 class="primary_color_text eparator-border">Latest Videos</h3>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="50%" height="315" src="https://www.youtube.com/embed/bUYZ00F9OUQ" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="50%" height="315" src="https://www.youtube.com/embed/bUYZ00F9OUQ" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="50%" height="315" src="https://www.youtube.com/embed/bUYZ00F9OUQ" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="50%" height="315" src="https://www.youtube.com/embed/bUYZ00F9OUQ" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div>
+            <h5 class="text-center text-danger"><a class="text-center text-danger" routerLink="/errorPage">View More</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+
+  <div id="section4" class="mt-5" style=" background-image: url(../../assets/images/GALLERY\ BG\ .jpg);
+  background-attachment:fixed; border-bottom-left-radius: 100%;">
+    <div style=" background-color: rgba(0,22,47,.81);
+    opacity: 1;
+    transition: background .3s,border-radius .3s,opacity .3s;">
+      <div class="container  py-5">
+        <h5 class="sub_title title-wrapper text-center pb-4">Gallery</h5>
+        <h2 class="text-center text-light">Our Latest Gallery</h2>
+        <div class="row">
+          <div class="col-md-3 my-2">
+            <img class="w-100 img_gallery"
+              src="../../assets/images/gallery/SAM03376.JPG"
+              alt="">
+          </div>
+          <div class="col-md-3 my-2">
+            <img class="w-100 img_gallery"
+              src="../../assets/images/gallery/VAS_8348.JPG"
+              alt="">
+          </div>
+          <div class="col-md-3 my-2">
+            <img class="w-100 img_gallery"
+              src="../../assets/images/gallery/DSC_6601.JPG"
+              alt="">
+          </div>
+          <div class="col-md-3 my-2">
+            <img class="w-100 img_gallery"
+              src="../../assets/images/gallery/DSC_6649.JPG"
+              alt="">
+          </div>
+          <div class="col-md-3 my-2">
+            <img class="w-100 img_gallery"
+              src="../../assets/images/gallery/DSC_6913.JPG"
+              alt="">
+          </div>
+          <div class="col-md-3 my-2">
+            <img class="w-100 img_gallery"
+              src="../../assets/images/gallery/DSC_6929.JPG"
+              alt="">
+          </div>
+          <div class="col-md-3 my-2">
+            <img class="w-100 img_gallery"
+              src="../../assets/images/gallery/photo_2019-10-20_18-25-03.jpg"
+              alt="">
+          </div>
+          <div class="col-md-3 my-2">
+            <img class="w-100 img_gallery"
+              src="../../assets/images/gallery/SAM03370.JPG"
+              alt="">
+          </div>
+
+          <!-- <div class="img-grid">
+            <img class="img_gallery" src="../../assets/images/gallery/SAM03376.JPG" alt="">
+            <img class="img_gallery" src="../../assets/images/gallery/VAS_8348.JPG" alt="">
+            <img class="img_gallery" src="../../assets/images/gallery/DSC_6601.JPG" alt="">
+            <img class="img_gallery" src="../../assets/images/gallery/DSC_6649.JPG" alt="">
+            <img class="img_gallery" src="../../assets/images/gallery/DSC_6913.JPG" alt="">
+            <img class="img_gallery" src="../../assets/images/gallery/DSC_6929.JPG" alt="">
+            <img class="img_gallery" src="../../assets/images/gallery/photo_2019-10-20_18-25-03.jpg" alt="">
+            <img class="img_gallery" src="../../assets/images/gallery/SAM03370.JPG" alt="">
+          </div> -->
+
+          <!-- <h5 class="text-center text-danger"><a class="text-center text-danger" routerLink="/errorPage">View More</a>
+          </h5> -->
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!--  -->
+  <div id="section5" class="mt-5 event_section p-0"
+    >
+    <div class="py-5" >
+    <h5 class="sub_title title-wrapper text-center pb-4 ">Contact Us</h5>
+    <div class="container-fluid">
+      <section class="whychooseus_section background-image-cover pg-spc-m">
+        <div class="container-fluid text-center" style="width: 90%; margin: 0 auto;">
+          <div class="card-group">
+           <div class="card card_style px-3 text-white">
+             <img class="card-img" src="../../assets/images/ShoppingCart – Firebase console_files/contact_bg_2-1.jpg" alt="Card image">
+             <div class="card-img-overlay">
+               <h1 class="card-title"><i class="fa fa-map-marker" aria-hidden="true"></i></h1>
+               <h5 class="card-text">Our Location</h5>
+               <address>
+                  Dr.B.V.Kumar Foundation <br>
+                   T2,
+                   Sri Rama Residency,
+                   raajaulabajar,
+                   Ramavarapadu,
+                   vijayawada - 521108
+               </address>
+             </div>
+           </div>
+            <div class="card card_style px-3 text-white">
+              <img class="card-img" src="../../assets/images/ShoppingCart – Firebase console_files/contact_bg_3-1.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h1 class="card-title"><i class="fa fa-phone" aria-hidden="true"></i></h1>
+                <h5 class="card-text">Phone Number</h5>
+                <p class="card-text text-light">
+                  <a class="text-light" href="tel:9949396760 ">9949396760 </a><br>
+                  <a class="text-light" href="tel:934715761">934715761</a>
+                
+                </p>
+              </div>
+            </div>
+            <div class="card card_style px-3 text-white">
+              <img class="card-img" src="../../assets/images/ShoppingCart – Firebase console_files/contact_bg_1-1.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h1 class="card-title"><i class="fa fa-envelope-o" aria-hidden="true"></i></h1>
+                <h5 class="card-text">
+                  Email Address</h5>
+                <p class="card-text">
+                  <a class="text-light" href="mailto: bvkumarfoundation@gmail.com">bvkumarfoundation@gmail.com</a>
+                </p>
+              </div>
+            </div>
+            </div>
+          <!-- </div> -->
+          <!-- <div class="row justify-content-left">
+            <div class="col-md-12 text-left ">
+              
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </div>
+    </div>
+
+
+  </div>
+
+  <div id="section6" class="mt-5" style=" background-image: url(../../assets/images/DONATE\ BG.jpg);
+  background-attachment:fixed">
+    <div style=" background-color: rgba(0,22,47,.81);
+    opacity: 1;
+    transition: background .3s,border-radius .3s,opacity .3s;">
+     <div class="container  py-5 text-center">
+         <!-- <a class="popup-video-post popup-trigger-icon icon-theme-color"
+          href="https://www.youtube.com/watch?v=e1l1-LWTcBs"><span class="ti-heart"></span></a> -->
+
+        <h5 class="sub_title title-wrapper text-center pb-4">SOW A SEED</h5>
+
+                    <svg class="heart my-4" viewBox="0 0 32 29.6">
+                      <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+	c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                    </svg>
+        <div class="row">
+          <div class="col-md">
+
+            <h2 class="text-light">“ If you are blessed by our ministry ang if you want to participate in spreading the gospel, you can send your donation to our online account and can pray for our ministry..”</h2>
+
+              <button class="btn-4"routerLink="/errorPage"><span>DONATE ONLINE</span></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div>
+    <img src="../../assets/images/DAD TESTIMONY.jpg" alt="">
+  </div>
+<!-- <div class="container" style="height: 60vh;">
+  <div class="d-flex justify-content-around" style="margin-top: 5rem;">
+      <img class="align-self-center thumbnail" src="../../assets/images/bvk.jpg" alt="">
+  </div>
+    <div class="d-flex justify-content-around" >
+      <img class="align-self-center signature" src="../../assets/images/WTMK 2  black  copy.png" alt="">
+    </div>
+
+</div> -->
+
+
+<div class="container" *ngFor="let p of ytData">
+  <div class="jumbotron bg-light">
+
+    <hr class="my-4">
+
+    <section class="card card-info text-white bg-dark mb-3">
+      <div class="card-header">{{p.youtubeUrl}}</div>
+      <section class="card-img-top">
+        <youtube-player
+          [videoId]="p.youtubeUrl"
+          (ready)="savePlayer($event)"
+          (change)="onStateChange($event)"
+          [playerVars]="playerVars">
+        </youtube-player>
+      </section>
+      <div class="card-body"></div>
+    </section>
+    <button *ngIf="ytEvent !== 1"
+      type="button"
+      class="btn btn-primary"
+      (click)="playVideo()">
+      Play
+    </button>
+    <button *ngIf="ytEvent === 1"
+      type="button"
+      class="btn btn-danger"
+      (click)="pauseVideo()">
+      Pause
+    </button>
+  </div>
+</div>
+
+<div class="col-12">
+  <section class="card card-success">
+    <div class="card-body">
+      <div class="card-title">Player State</div>
+      <pre>{{ ytEvent }}</pre>
+    </div>
+  </section>
+</div>

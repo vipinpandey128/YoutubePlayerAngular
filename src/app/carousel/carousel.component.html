@@ -1,0 +1,40 @@
+<carousel>
+   <slide class="image" *ngFor="let p of landing$ | async">
+      <img [src]="p.image" alt="first slide" class="carousel_thumb">
+      <!-- <button *ngIf ="paginationLimit < list.length" (click)="showMoreItems()">
+        Show More
+       </button> -->
+      
+      <div style=" background-color: rgba(0,22,47,.81);
+    opacity: 1;
+    transition: background .3s,border-radius .3s,opacity .3s;">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="carousel_text">WE CALL PRICE THE LORD</h2>
+          <!-- <button class="btn custom_button" [href]="p.youtubeUrl">Watch</button> -->
+          <a class="btn custom_button" href="{{p.youtubeUrl}}" target="_blank">Watch Now</a>
+        </div>
+      </div>
+
+    </slide>
+  <slide>
+    <img src="../../assets/images/zmain-slider-1.jpg" alt="first slide" class="carousel_thumb">
+    <div class="carousel-caption d-none d-md-block">
+      <h2 class="carousel_text">GOD GIVES US POWER</h2>
+            <button class="btn custom_button"  (click)="scrollTo('section4')">Contact Us</button>
+    </div>
+  </slide>
+  <slide>
+    <img src="../../assets/images/zmain-slider-2.jpg" alt="second slide" class="carousel_thumb">
+    <div class="carousel-caption d-none d-md-block">
+      <h2 class="carousel_text">your hope will not be cut off. - Proverbs 24:14</h2>
+      <button class="btn custom_button"  (click)="scrollTo('section4')">Contact Us</button>
+    </div>
+  </slide>
+  <slide>
+    <img src="../../assets/images/zmain-slider-3.jpg" alt="third slide" class="carousel_thumb">
+    <div class="carousel-caption d-none d-md-block">
+      <h2 class="carousel_text">Pray! And listen to God! You can do this alone, but find somebody to do it with you</h2>
+            <button class="btn custom_button"  (click)="scrollTo('section4')">Contact Us</button>
+    </div>
+  </slide>
+</carousel>

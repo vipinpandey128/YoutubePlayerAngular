@@ -1,0 +1,152 @@
+<div class="container">
+
+
+  <div class="row form_custom">
+    <div class="col-md-8">
+  
+  
+      <form #f="ngForm" (ngSubmit)="save(f.value)">
+        <div class="form-group">
+            <label for="imageUrl">Landing Image</label><br />
+            <input type="file" (change)="onFileSelectedOne($event)" accept=".png,.jpg" />
+            <div *ngIf="fb" class="list">
+              <input type="text" [(ngModel)]="fb" class="form-control" name="image" #image="ngModel">
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="youtubeUrl">YouTube Url</label><br />
+            <input [(ngModel)]="product.youtubeUrl" name="youtubeUrl" #youtubeUrl="ngModel" id="youtubeUrl" type="text" class="form-control"
+              required>
+            <div class="alert alert-danger" *ngIf="youtubeUrl.touched && youtubeUrl.invalid">
+              youtubeUrl is required
+            </div>
+          </div>
+  
+        <button class="btn btn-primary">Save</button>
+        <button type="button" (click)="delete()" class="btn btn-danger" *ngIf="id">
+          Delete
+        </button>
+      </form>
+
+                            <!--  -->
+
+      
+    </div>
+  
+  </div>
+
+
+  <div class="row mt-5">
+    <div class="col-md-8">
+      <form #ff="ngForm" (ngSubmit)="events(ff.value)">
+        <h5>Weakly Events</h5>
+          <div class="form-group">
+            <label for="sundayEvent">sunday Event</label><br />
+            <!-- <input [(ngModel)]="product.sundayEvent" name="sundayEvent" #sundayEvent="ngModel" id="sundayEvent" type="text" class="form-control"
+              required> -->
+              <input data-provide="datepicker" [(ngModel)]="product.sundayEvent" name="sundayEvent" #sundayEvent="ngModel" id="sundayEvent" type="text" class="form-control"
+              required>
+            <div class="alert alert-danger" *ngIf="sundayEvent.touched && sundayEvent.invalid">
+              sundayEvent is required
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mondayEvent">Monday Event</label><br />
+            <input [(ngModel)]="product.mondayEvent" name="mondayEvent" #mondayEvent="ngModel" id="mondayEvent" type="text" class="form-control"
+              required>
+            <div class="alert alert-danger" *ngIf="mondayEvent.touched && mondayEvent.invalid">
+              mondayEvent is required
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="tuesdayEvent">tuesday Event</label><br />
+            <input [(ngModel)]="product.tuesdayEvent" name="tuesdayEvent" #tuesdayEvent="ngModel" id="tuesdayEvent" type="text" class="form-control"
+              required>
+            <div class="alert alert-danger" *ngIf="tuesdayEvent.touched && tuesdayEvent.invalid">
+              tuesdayEvent is required
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="wednesdayEvent">wednesday Event</label><br />
+            <input [(ngModel)]="product.wednesday" name="wednesday" #wednesday="ngModel" id="wednesday" type="text" class="form-control"
+              required>
+            <div class="alert alert-danger" *ngIf="wednesday.touched && wednesday.invalid">
+              wednesday is required
+            </div>
+          </div>
+        <button class="btn btn-primary">Save</button>
+        <button type="button" (click)="delete()" class="btn btn-danger" *ngIf="id">
+          Delete
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="row mt-5">
+    <div class="col-md-8">
+      <form #fff="ngForm" (ngSubmit)="special(fff.value)">
+        <h5>Special Events</h5>
+          <div class="form-group">
+            <label for="eventImage">Event Image</label><br />
+            <input type="file" (change)="onFileSelectedOne($event)" accept=".png,.jpg" />
+            <div *ngIf="fb" class="list">
+              <input type="text" [(ngModel)]="fb" class="form-control" name="eventImage" #eventImage="ngModel">
+          </div>
+            <!-- <input [(ngModel)]="product.eventImage" name="eventImage" #eventImage="ngModel" id="eventImage" type="file" class="form-control"
+              required>
+            <div class="alert alert-danger" *ngIf="eventImage.touched && eventImage.invalid">
+              eventImage is required
+            </div> -->
+          </div>
+          
+          <div class="form-group">
+            <label for="eventTitle">Event Title</label><br />
+            <input [(ngModel)]="product.eventTitle" name="eventTitle" #eventTitle="ngModel" id="eventTitle" type="text" class="form-control"
+              required>
+            <div class="alert alert-danger" *ngIf="eventTitle.touched && eventTitle.invalid">
+              eventTitle is required
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="eventDate">Event Date</label><br />
+            
+            <input [(ngModel)]="product.eventDate" name="eventDate" #eventDate="ngModel" id="eventDate" type="datetime-local" class="form-control"
+              required>
+            <div class="alert alert-danger" *ngIf="eventDate.touched && eventDate.invalid">
+              eventDate is required
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="eventTime">Event Time</label><br />
+            <input [(ngModel)]="product.eventTime" name="eventTime" #eventTime="ngModel" id="eventTime" type="text" class="form-control"
+              required>
+            <div class="alert alert-danger" *ngIf="eventTime.touched && eventTime.invalid">
+              eventTime is required
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="eventPlace">Event Place</label><br />
+            <input [(ngModel)]="product.eventPlace" name="eventPlace" #eventPlace="ngModel" id="eventPlace" type="text" class="form-control"
+              required>
+            <div class="alert alert-danger" *ngIf="eventPlace.touched && eventPlace.invalid">
+              eventPlace is required
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="eventDescription">Event Description</label><br />
+            <input [(ngModel)]="product.eventDescription" name="eventDescription" #eventDescription="ngModel" id="eventDescription" type="text" class="form-control"
+              required>
+            <div class="alert alert-danger" *ngIf="eventDescription.touched && eventDescription.invalid">
+              eventDescription is required
+            </div>
+          </div>
+        <button class="btn btn-primary">Save</button>
+        
+      </form>
+    </div>
+  </div>
+</div>

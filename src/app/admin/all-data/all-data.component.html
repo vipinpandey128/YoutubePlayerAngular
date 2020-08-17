@@ -1,0 +1,63 @@
+<div class="container form_custom">
+    <div class="row">
+        <div class="col">
+            <button class="btn custom_button" routerLink="/ministry_admin">Add Data</button>
+        </div>
+    </div>
+
+    
+
+    <div class="row">
+        <div class="col">
+            <h5>Added Data</h5>
+            <table class="table" >
+                <h5>Landing_Image</h5>
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">url</th>
+                    <th scope="col">options</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let p of landing$ | async">
+                    <td>
+                        <img [src]="p.image" alt="first slide" class="data_thumb">
+                    </td>
+                    
+                    <td>{{p.youtubeUrl}}</td>
+                    <td><a [routerLink]="['ministry_admin/', p.key]">edit</a></td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+
+
+              <table class="table" >
+                <h5>Weakly Events </h5>
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">url</th>
+                    <th scope="col">options</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let p of events$ | async">
+                    <td>
+                        {{p.mondayEvent}}
+
+                        {{p.key}}
+                    </td>
+                    <td><a [routerLink]="['ministry_admin/', p.key]">edit</a></td>
+
+                   
+                  </tr>
+                 
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

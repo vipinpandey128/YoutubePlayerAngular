@@ -1,0 +1,56 @@
+  <nav class="navbar navbar-expand-md fixed-top  topbar d-flex menu-link controllable">
+  <a class="navbar-brand col-md-3 col-sm-3 col-xs-3" (click)="scrollTo('section1')"  routerLink="/">
+    <img class="toggle" src="../../assets/images/WTMK 2 WHITE copy.png" alt="">
+  </a>
+  <button (click)="toggleNavbar()" class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" [class.show]="isOpen" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" (click)="scrollTo('section1')" routerLink="/">About</a>
+        <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+        <!-- <ng-container *ngIf="currentSection==='section1'">About</ng-container> -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  (click)="scrollTo('section2')" routerLink="/">Events</a>
+        <!-- <a class="nav-link" href="#">Link</a> -->
+        <!-- <ng-container *ngIf="currentSection==='section2'">O</ng-container> -->
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" (click)="scrollTo('section3')" routerLink="/">Videos</a>
+          <!-- <ng-container *ngIf="currentSection==='section3'">O</ng-container> -->
+        <!-- <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" (click)="scrollTo('section4')" routerLink="/">Gallery</a>
+        <!-- <ng-container *ngIf="currentSection==='section3'">O</ng-container> -->
+        <!-- <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" (click)="scrollTo('section5')" routerLink="/">Contact Us</a>
+        <!-- <ng-container *ngIf="currentSection==='section3'">O</ng-container> -->
+        <!-- <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin_Data">Admin</a>
+        
+      </li>
+      <li class="nav-item" (click)="scrollTo('section6')">
+        <button class="btn custom_button" routerLink="/">DONATE</button>
+        <!-- <ng-container *ngIf="currentSection==='section3'">O</ng-container> -->
+        <!-- <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<!-- <main role="main" class="container">
+  <div class="jumbotron">
+    <h1>Navbar example</h1>
+    <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.</p>
+    <a class="btn btn-lg btn-primary" href="/docs/4.5/components/navbar/" role="button">View navbar docs &raquo;</a>
+  </div>
+</main> -->

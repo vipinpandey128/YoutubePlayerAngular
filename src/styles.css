@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* @import "~bootstrap/dist/css/bootstrap.css";
+@import '~font-awesome/css/font-awesome.css'; */
+
+body{
+
+    /* margin-top: 3rem; */
+}
+
+.title-wrapper {
+  color: #bf0a30;
+}
+ .sub-title {
+   color: #bf0a30;
+ }
+.custom_button {
+    background: #bf0a30;
+  color: white;
+  font-family: Poppins;
+
+}
+.eparator-border {
+  border-bottom: 1px solid #bf0a30;
+}
+.sub_title{
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.btn{
+  color: white !important;
+}
